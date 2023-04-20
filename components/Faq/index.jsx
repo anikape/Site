@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { IoMdAdd, IoMdClose } from "react-icons/io";
@@ -11,33 +10,6 @@ import Input from "../commons/Input";
 import Textarea from "../commons/Textarea";
 import { RadioButton } from "../commons/RadioButton";
 import { souJunior, mentor, voluntario } from "../../utils/faqItems";
-=======
-import React, { useState } from "react";
-import { IoMdAdd, IoMdClose } from "react-icons/io";
-import Title from "../commons/Title";
-import styles from "./Faq.module.css";
-import { useForm } from "react-hook-form";
-import emailjs from "@emailjs/browser";
-import { yupResolver } from "@hookform/resolvers/yup";
-import * as yup from "yup";
-
-import { souJunior, mentor, voluntario } from "../../utils/faqItems";
-import { Accordion, AccordionItem } from "@szhsin/react-accordion";
-import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import Input from "../commons/Input";
-import Textarea from "../commons/Textarea";
-import { RadioButton } from "../commons/RadioButton";
-
-//Validação do FORM
-const schema = yup.object().shape({
-  name: yup.string().required("'Nome é obrigatório'"),
-  email: yup
-    .string()
-    .email("'E-mail inválido'")
-    .required("E-mail é obrigatório"),
-  description: yup.string().required("'Mensagem é obrigatória'"),
-});
->>>>>>> 3bdc870b518d8690e6f5590bd7cfccdf2d930622
 
 export const Faq = () => {
   const [souJr, setSouJr] = useState(false);
